@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <h1>TODO LIST </h1>
+        <input class="inputSearch" placeholder="Search" type="search">
+        <select class="select">
+            <option>All</option>
+            <option>Active</option>
+            <option>Inactive</option>
+        </select>
+        <button class="btnAdd">+Add</button>
+
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task Name</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="box"></tbody>
+    </table>
+
+    <dialog class="AddDialog">
+        <form class="AddForm">
+            <input name="AddTask" placeholder="Add Task" type="text">
+            <button>submit</button>
+        </form>
+    </dialog>
+
+    <dialog class="EditDialog">
+        <form class="EditForm">
+            <input name="EditTask" placeholder="Edit Task" type="text">
+            <button>submit</button>
+        </form>
+    </dialog>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
